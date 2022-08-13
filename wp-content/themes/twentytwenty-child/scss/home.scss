@@ -91,12 +91,11 @@ div.logo {
   float: none;
   width: 300px;
   transition: all 0.5s ease;
-}
-
-div.logo * {
-  object-fit: contain;
-  display: block;
-  transition: all 0.5s ease;
+  * {
+    object-fit: contain;
+    display: block;
+    transition: all 0.5s ease;
+  }
 }
 
 #page {
@@ -111,9 +110,7 @@ div.logo * {
   width: 100%;
   z-index: 1000;
   transition: all 0.3s ease;
-}
 
-#masthead {
   > .row-container {
     display: flex;
     align-items: flex-start;
@@ -122,20 +119,20 @@ div.logo * {
     max-width: 100%;
     padding: 0px 40px;
   }
-}
 
-.menu-right {
-  width: 100%;
-  position: relative;
-}
-
-#masthead {
   &.navbar-fixed-top {
     padding: 10px 0px;
     background: $base-green;
     transition: all 0.3s ease;
   }
 }
+
+
+.menu-right {
+  width: 100%;
+  position: relative;
+}
+
 
 .navbar-fixed-top {
   div.logo {
@@ -146,7 +143,7 @@ div.logo * {
 
 /* == == HEADER END == == */
 
-/*Nav Menu*/
+/*== == Nav Side Menu == ==*/
 .nav-menu {
   position: fixed;
   top: 0;
@@ -211,9 +208,9 @@ div.logo * {
   }
 }
 
-/*Nav Menu END*/
+/*== == Nav Side Menu END == ==*/
 
-/*Spinning arrow hamburger begins */
+/*== == Spinning arrow hamburger begins == ==*/
 .spin {
   position: relative;
   top: 0;
@@ -234,9 +231,6 @@ div.logo * {
   align-items: center;
   padding: 1em;
   z-index: 1;
-}
-
-.hamburger-s {
   > div {
     position: relative;
     height: 8px;
@@ -248,11 +242,7 @@ div.logo * {
     transition: all 0.2s ease;
     -webkit-transform: skewX(10deg);
     transform: skewX(10deg);
-  }
-}
 
-.hamburger-s {
-  > div {
     &::before {
       content: "";
       position: absolute;
@@ -264,10 +254,7 @@ div.logo * {
       z-index: 1;
       transition: all 0.4s ease;
     }
-  }
-}
-.hamburger-s {
-  > div {
+
     &::after {
       content: "";
       position: absolute;
@@ -288,35 +275,18 @@ div.logo * {
   cursor: pointer;
   opacity: 0;
   z-index: 2;
-}
 
-.toggle {
   &:checked {
     + .hamburger-s {
       > div {
         background: none;
         transform: skewX(0);
-      }
-    }
-  }
-}
 
-.toggle {
-  &:checked {
-    + .hamburger-s {
-      > div {
         &::before {
           -webkit-transform: translateY(18px) rotate(135deg);
           transform: translateY(18px) rotate(135deg);
         }
-      }
-    }
-  }
-}
-.toggle {
-  &:checked {
-    + .hamburger-s {
-      > div {
+
         &::after {
           -webkit-transform: translateY(-18px) rotate(-135deg);
           transform: translateY(-18px) rotate(-135deg);
@@ -324,10 +294,11 @@ div.logo * {
       }
     }
   }
-}
-/*Hamburger END*/
 
-/*Homepage*/
+}
+/*== == Hamburger END == ==*/
+
+/*== == Homepage == ==*/
 
 .hero-wrapper,
 .fold2-wrapper,
@@ -338,7 +309,7 @@ div.logo * {
   overflow: hidden;
 }
 
-/*Fold 1*/
+/*== Fold 1 ==*/
 .hero-wrapper {
   padding: 50px 0px;
   background: $base-green;
@@ -359,9 +330,7 @@ div.logo * {
   width: 60%;
   text-align: left;
   max-width: 680px;
-}
 
-.hero-content {
   .fold1-title {
     color: $base-purple;
     font-weight: 600;
@@ -510,9 +479,7 @@ div.logo * {
   &.team-fold {
     padding: 100px 0px 0px;
   }
-}
 
-.fold2-wrapper {
   &::before {
     content: "";
     position: absolute;
@@ -596,9 +563,7 @@ div.logo * {
   padding: 100px 0px;
   background: $base-purple;
   position: relative;
-}
 
-.fold3-wrapper {
   &::before {
     content: "";
     position: absolute;
@@ -611,8 +576,7 @@ div.logo * {
   }
 }
 
-h2 {
-  &.f3-title {
+.f3-title {
     text-align: center;
     color: white;
     max-width: 900px;
@@ -620,7 +584,6 @@ h2 {
     position: relative;
     z-index: 1;
   }
-}
 
 .f3-para {
   color: white;
@@ -682,9 +645,7 @@ ul {
   color: $base-purple;
   font-weight: 800;
   line-height: 38px;
-}
 
-.card-title {
   span {
     display: block;
     font-weight: 400;
@@ -892,6 +853,7 @@ ul {
   position: absolute;
   top: 50%;
   left: 0;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 34px;
   color: $base-green;
@@ -921,16 +883,18 @@ ul {
   align-items: flex-end;
 }
 
-h2.latest-title {
+.latest-title {
   position: relative;
   color: $base-purple;
   line-height: 74px;
   font-weight: 500;
 }
 
-.latest-top .learn-more {
-  margin: 0;
-}
+.latest-top{
+  .learn-more {
+    margin: 0;
+  }
+} 
 
 .blog-wrapper {
   margin-top: 80px;
@@ -941,9 +905,11 @@ h2.latest-title {
   grid-row-gap: 0px;
 }
 
-.blog-img img {
-  width: 100%;
-}
+.blog-img {
+  img {
+    width: 100%;
+  }
+} 
 
 .blog-card {
   max-width: 380px;
@@ -1061,9 +1027,11 @@ h2.latest-title {
   margin-top: 20px;
 }
 
-.contact-inner .border-btn {
-  margin: 40px auto 0px;
-}
+.contact-inner {
+  .border-btn {
+    margin: 40px auto 0px;
+  }
+} 
 /*Contact Fold END*/
 
 /*Homepage END*/

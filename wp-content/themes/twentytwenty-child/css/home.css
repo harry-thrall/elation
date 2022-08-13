@@ -87,7 +87,6 @@ div.logo {
   width: 300px;
   transition: all 0.5s ease;
 }
-
 div.logo * {
   object-fit: contain;
   display: block;
@@ -107,7 +106,6 @@ div.logo * {
   z-index: 1000;
   transition: all 0.3s ease;
 }
-
 #masthead > .row-container {
   display: flex;
   align-items: flex-start;
@@ -116,16 +114,15 @@ div.logo * {
   max-width: 100%;
   padding: 0px 40px;
 }
-
-.menu-right {
-  width: 100%;
-  position: relative;
-}
-
 #masthead.navbar-fixed-top {
   padding: 10px 0px;
   background: #0cce6b;
   transition: all 0.3s ease;
+}
+
+.menu-right {
+  width: 100%;
+  position: relative;
 }
 
 .navbar-fixed-top div.logo {
@@ -134,7 +131,7 @@ div.logo * {
 }
 
 /* == == HEADER END == == */
-/*Nav Menu*/
+/*== == Nav Side Menu == ==*/
 .nav-menu {
   position: fixed;
   top: 0;
@@ -192,8 +189,8 @@ div.logo * {
   font-weight: 600;
 }
 
-/*Nav Menu END*/
-/*Spinning arrow hamburger begins */
+/*== == Nav Side Menu END == ==*/
+/*== == Spinning arrow hamburger begins == ==*/
 .spin {
   position: relative;
   top: 0;
@@ -215,7 +212,6 @@ div.logo * {
   padding: 1em;
   z-index: 1;
 }
-
 .hamburger-s > div {
   position: relative;
   height: 8px;
@@ -228,7 +224,6 @@ div.logo * {
   -webkit-transform: skewX(10deg);
   transform: skewX(10deg);
 }
-
 .hamburger-s > div::before {
   content: "";
   position: absolute;
@@ -240,7 +235,6 @@ div.logo * {
   z-index: 1;
   transition: all 0.4s ease;
 }
-
 .hamburger-s > div::after {
   content: "";
   position: absolute;
@@ -260,24 +254,21 @@ div.logo * {
   opacity: 0;
   z-index: 2;
 }
-
 .toggle:checked + .hamburger-s > div {
   background: none;
   transform: skewX(0);
 }
-
 .toggle:checked + .hamburger-s > div::before {
   -webkit-transform: translateY(18px) rotate(135deg);
   transform: translateY(18px) rotate(135deg);
 }
-
 .toggle:checked + .hamburger-s > div::after {
   -webkit-transform: translateY(-18px) rotate(-135deg);
   transform: translateY(-18px) rotate(-135deg);
 }
 
-/*Hamburger END*/
-/*Homepage*/
+/*== == Hamburger END == ==*/
+/*== == Homepage == ==*/
 .hero-wrapper,
 .fold2-wrapper,
 .fold3-wrapper,
@@ -287,7 +278,7 @@ div.logo * {
   overflow: hidden;
 }
 
-/*Fold 1*/
+/*== Fold 1 ==*/
 .hero-wrapper {
   padding: 50px 0px;
   background: #0cce6b;
@@ -309,7 +300,6 @@ div.logo * {
   text-align: left;
   max-width: 680px;
 }
-
 .hero-content .fold1-title {
   color: #390049;
   font-weight: 600;
@@ -430,7 +420,6 @@ div.logo * {
 .fold2-wrapper.team-fold {
   padding: 100px 0px 0px;
 }
-
 .fold2-wrapper::before {
   content: "";
   position: absolute;
@@ -503,7 +492,6 @@ div.logo * {
   background: #390049;
   position: relative;
 }
-
 .fold3-wrapper::before {
   content: "";
   position: absolute;
@@ -515,7 +503,7 @@ div.logo * {
   transform: skewY(-0.5deg);
 }
 
-h2.f3-title {
+.f3-title {
   text-align: center;
   color: white;
   max-width: 900px;
@@ -578,7 +566,6 @@ ul.card-list li {
   font-weight: 800;
   line-height: 38px;
 }
-
 .card-title span {
   display: block;
   font-weight: 400;
@@ -760,6 +747,7 @@ ul.card-list li {
   position: absolute;
   top: 50%;
   left: 0;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 34px;
   color: #0cce6b;
@@ -786,7 +774,7 @@ ul.card-list li {
   align-items: flex-end;
 }
 
-h2.latest-title {
+.latest-title {
   position: relative;
   color: #390049;
   line-height: 74px;
