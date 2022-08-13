@@ -8,9 +8,24 @@
   .hero-inner {
     justify-content: flex-start;
   }
-  .hero-content .fold1-title {
+  .fold2-inner {
+    grid-template-columns: 1fr 0.25fr 1fr;
+  }
+  .caption {
     font-size: 60px;
     line-height: 68px;
+  }
+  .heading1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+  .testimonials-wrapper {
+    justify-content: space-evenly;
+  }
+  .testimonials::before {
+    top: -80px;
+    left: 0;
+    opacity: 0.8;
   }
 }
 @media (max-width: 1200px) {
@@ -21,8 +36,28 @@
   .product-card .product-card-top img.card-icon {
     width: auto;
   }
+  .product-slider.slick-slider {
+    max-width: 900px;
+    margin: 30px auto;
+  }
+  .product-slider .slick-track {
+    padding: 30px 0px;
+  }
+  .blog-card {
+    max-width: unset;
+  }
+  .blog-wrapper .slick-slider .slick-dots {
+    text-align: center;
+  }
 }
 @media (max-width: 980px) {
+  .caption {
+    font-size: 54px;
+    line-height: 64px;
+  }
+  .slick-slider .slick-dots {
+    text-align: center;
+  }
   .hero-inner {
     flex-direction: column-reverse;
     align-items: center;
@@ -36,8 +71,151 @@
   .hero-content {
     width: 100%;
     text-align: center;
+    max-width: unset;
   }
   .hero-content .readmore {
     margin: 20px auto;
+  }
+  .fold2-right-card .border-btn {
+    margin: 40px auto 0px;
+  }
+  .fold2-inner {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-row-gap: 30px;
+    text-align: center;
+  }
+  .fold2-left-card {
+    grid-area: 1/1/2/2;
+  }
+  .fold2-right-card {
+    grid-area: 3/1/4/2;
+  }
+  .team-inner {
+    flex-direction: column;
+    gap: 0;
+  }
+  .team-img {
+    width: 100%;
+    max-width: 450px;
+    align-self: center;
+  }
+  .team-content {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 700px;
+  }
+  .team-content .border-btn {
+    margin: 20px auto;
+  }
+  .fold2-wrapper.team-fold {
+    padding: 50px 20px;
+  }
+  .testimonials {
+    max-width: unset;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .testimonials-wrapper {
+    flex-direction: column-reverse;
+  }
+  .testimonials-image {
+    max-width: 450px;
+  }
+  .testimonials, .testimonials-image {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .testimonials-name {
+    margin: 0 auto;
+  }
+  .latest-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients-wrapper {
+    padding: 50px 10px;
+  }
+  .contact-inner {
+    padding: 50px 20px;
+  }
+  .footer-item {
+    display: none;
+  }
+  .footer-item.footer-social {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-block p, .footer-block a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 800px) {
+  .product-slider.slick-slider {
+    max-width: 450px;
+  }
+}
+@media (max-width: 640px) {
+  .caption {
+    font-size: 44px;
+    line-height: 54px;
+  }
+  .heading1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .heading2 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .heading3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .heading4 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .heading5 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .fold2-left-card,
+.fold2-right-card {
+    padding: 50px 20px;
+  }
+  .blog-content {
+    padding: 50px 10px;
+  }
+  .clients-slider {
+    padding: 0px 20px;
+  }
+  .latest-wrapper {
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 480px) {
+  .testimonials-title.heading2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .blog-content::before {
+    display: none;
   }
 }

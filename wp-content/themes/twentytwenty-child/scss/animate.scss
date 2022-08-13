@@ -1,0 +1,266 @@
+.menu-top {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+#primary-menu {
+    li {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        transition: all 0.5s ease;
+    }
+}
+
+.nav-menu .social-links {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    transition: all 0.5s ease;
+}
+
+.fold2-left-card {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        transition: all 0.5s ease;
+    }
+
+.fold2-right-card {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+}    
+
+.contact-inner {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+.jigsaw-rel, .jigsaw-abs {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    transition: all 0.5s linear;
+}
+
+.jigsaw-abs{
+    &.jigsaw-bottom {
+        -webkit-transform: translate(0px, 1000px);
+        transform: translate(0px, 1000px);
+        transition-delay: 1s;
+    }
+    &.jigsaw-top {
+        transition-delay: 0.5s;
+    }
+}
+
+.product-card {
+-webkit-transform: translateY(1000px);
+transform: translateY(1000px);
+transition: all 0.5s ease;
+transition-delay: 1.5s;
+
+&:nth-child(2) {
+    transition-delay: 2s;
+}
+
+&:nth-child(3) {
+    transition-delay: 2.5s;
+}
+}
+
+.team-karen {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    transition: all 1s ease;
+}
+
+.team-content {
+    -webkit-transform: translate(1000px, -200px);
+    transform: translate(1000px, -200px);
+    transition: all 0.5s ease;
+}
+
+.blog-card{
+    
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+
+    &.blog-left, &.blog-right {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+    }
+
+    &.blog-right {
+        transition-delay: 1.5s;
+    }
+
+    &.blog-middle{
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        transition-delay: 1s;
+    }
+
+}
+
+.testimonials {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    transition: all 0.5s ease;
+}
+
+.clients-wrapper {
+    -webkit-transform: translateY(1000px) scale(0);
+    transform: translateY(1000px) scale(0);
+    transition: all 0.5s ease;
+    transform-origin: bottom;
+    transition-delay: 1.5s;
+}
+
+.latest-top {
+    .latest-title {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        transition: all 0.5s ease;
+    }
+    .learn-more {
+        -webkit-transform: translateX(1000px);
+        transform: translateX(1000px);
+        transition: all 0.5s ease;
+    }
+}
+
+.fold1-image {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: all 0.5s ease;
+    transform-origin: bottom right;
+}
+
+.hero-content {
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    transition: all 0.5s ease;
+    transform-origin: center;
+    transition-delay: 0.5s;
+}
+
+.f3-para {
+    -webkit-transform: translateY(500px);
+    transform: translateY(500px);
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+}
+
+.f3-title {
+    -webkit-transform: translateY(-500px);
+    transform: translateY(-500px);
+    transition: all 0.5s ease;
+}
+
+
+#primary-menu {
+
+    .underline-green{
+        z-index: 10;
+        &::before {
+            -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+            transition: transform 0.5s ease;
+            transform-origin: left;
+            transition-delay: 0s;
+            z-index: -1;
+        }
+    }
+
+    li{
+        &:hover {
+            .underline-green{
+                &::before {
+                    -webkit-transform: scaleX(1);
+                    transform: scaleX(1);
+                }
+            }
+        }
+    }
+} 
+
+//Animate complete
+
+.animate-complete {
+
+    .contact-inner {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .menu-top,
+    .product-card,
+    .f3-title, 
+    .f3-para {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    #primary-menu {
+        li {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+    }
+
+    &.nav-menu{
+        .social-links {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+        }
+    }
+
+    .fold2-left-card,
+    .fold2-right-card,
+    .testimonials,
+    .jigsaw-rel, 
+    .jigsaw-abs,
+    .team-karen,
+    .latest-title,
+    .learn-more {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+
+    .jigsaw-abs{
+        &.jigsaw-bottom {
+            transform: translate(0px, 0px);
+        }
+    }
+
+    .team-content {
+        transform: translate(0px, 0px);
+    }
+
+    .product-slider {
+        .blog-card, .product-card {
+            transform: translateY(0px);
+        }
+    }
+
+    .clients-wrapper {
+        transform: translateY(0) scale(1);
+    }
+    
+    .fold1-image {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .hero-content {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+    
+
+
+}
+

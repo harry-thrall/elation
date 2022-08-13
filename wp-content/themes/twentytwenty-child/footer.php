@@ -20,7 +20,7 @@
 </div>
 
 <div class="footer-item footer-products">
-	<p class="footer-title">Products</p>
+	<p class="footer-title heading4">Products</p>
 	<ul class="footer-list">
 		<li><a href="#">Growth Framework</a></li>
 		<li><a href="#">Growth Academy</a></li>
@@ -28,7 +28,7 @@
 	</ul>
 </div>
 <div class="footer-item footer-company">
-	<p class="footer-title">Company</p>
+	<p class="footer-title heading4">Company</p>
 	<ul class="footer-list">
 		<li><a href="#">About</a></li>
 		<li><a href="#">News &amp; Insights</a></li>
@@ -36,7 +36,7 @@
 	</ul>
 </div>
 <div class="footer-item footer-help">
-	<p class="footer-title">Help</p>
+	<p class="footer-title heading4">Help</p>
 	<ul class="footer-list">
 		<li><a href="#">FAQ</a></li>
 		<li><a href="#">Contact</a></li>
@@ -50,7 +50,7 @@
 	<a href="#"><i class="fab fa-linkedin-in"></i></a>
 	<a href="#"><i class="fab fa-instagram"></i></a>
 	</div>
-	<p class="newsletter-para">Subscribe to our newsletter and stay in the loop.</p>
+	<p class="newsletter-para heading5">Subscribe to our newsletter and stay in the loop.</p>
 	<a href="#" class="learn-more">Sign Up <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </div>
 <div class="footer-row">
@@ -63,7 +63,7 @@
 	</div>
 </div>
 <!-- #page -->
-
+<div class="menu-overlay"></div>
 <?php wp_footer(); ?>
 
 </body>

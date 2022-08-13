@@ -62,6 +62,8 @@ $id = get_the_ID();
 				array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
+					'link_before'    => '<span class="underline-yellow underline-green">',
+					'link_after'     => '</span>'
 				)
 			);
 			?>

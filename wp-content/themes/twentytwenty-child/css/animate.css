@@ -1,0 +1,214 @@
+.menu-top {
+  -webkit-transform: translateY(-500px);
+  transform: translateY(-500px);
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+}
+
+#primary-menu li {
+  -webkit-transform: translateX(1000px);
+  transform: translateX(1000px);
+  transition: all 0.5s ease;
+}
+
+.nav-menu .social-links {
+  -webkit-transform: translateY(500px);
+  transform: translateY(500px);
+  transition: all 0.5s ease;
+}
+
+.fold2-left-card {
+  -webkit-transform: translateX(-1000px);
+  transform: translateX(-1000px);
+  transition: all 0.5s ease;
+}
+
+.fold2-right-card {
+  -webkit-transform: translateX(1000px);
+  transform: translateX(1000px);
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+}
+
+.contact-inner {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.jigsaw-rel, .jigsaw-abs {
+  -webkit-transform: translateX(1000px);
+  transform: translateX(1000px);
+  transition: all 0.5s linear;
+}
+
+.jigsaw-abs.jigsaw-bottom {
+  -webkit-transform: translate(0px, 1000px);
+  transform: translate(0px, 1000px);
+  transition-delay: 1s;
+}
+.jigsaw-abs.jigsaw-top {
+  transition-delay: 0.5s;
+}
+
+.product-card {
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+  transition: all 0.5s ease;
+  transition-delay: 1.5s;
+}
+.product-card:nth-child(2) {
+  transition-delay: 2s;
+}
+.product-card:nth-child(3) {
+  transition-delay: 2.5s;
+}
+
+.team-karen {
+  -webkit-transform: translateX(-1000px);
+  transform: translateX(-1000px);
+  transition: all 1s ease;
+}
+
+.team-content {
+  -webkit-transform: translate(1000px, -200px);
+  transform: translate(1000px, -200px);
+  transition: all 0.5s ease;
+}
+
+.blog-card {
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+}
+.blog-card.blog-left, .blog-card.blog-right {
+  -webkit-transform: translateY(-1000px);
+  transform: translateY(-1000px);
+}
+.blog-card.blog-right {
+  transition-delay: 1.5s;
+}
+.blog-card.blog-middle {
+  -webkit-transform: translateY(1000px);
+  transform: translateY(1000px);
+  transition-delay: 1s;
+}
+
+.testimonials {
+  -webkit-transform: translateX(-1000px);
+  transform: translateX(-1000px);
+  transition: all 0.5s ease;
+}
+
+.clients-wrapper {
+  -webkit-transform: translateY(1000px) scale(0);
+  transform: translateY(1000px) scale(0);
+  transition: all 0.5s ease;
+  transform-origin: bottom;
+  transition-delay: 1.5s;
+}
+
+.latest-top .latest-title {
+  -webkit-transform: translateX(-1000px);
+  transform: translateX(-1000px);
+  transition: all 0.5s ease;
+}
+.latest-top .learn-more {
+  -webkit-transform: translateX(1000px);
+  transform: translateX(1000px);
+  transition: all 0.5s ease;
+}
+
+.fold1-image {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  transition: all 0.5s ease;
+  transform-origin: bottom right;
+}
+
+.hero-content {
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  transition: all 0.5s ease;
+  transform-origin: center;
+  transition-delay: 0.5s;
+}
+
+.f3-para {
+  -webkit-transform: translateY(500px);
+  transform: translateY(500px);
+  transition: all 0.5s ease;
+  transition-delay: 0.5s;
+}
+
+.f3-title {
+  -webkit-transform: translateY(-500px);
+  transform: translateY(-500px);
+  transition: all 0.5s ease;
+}
+
+#primary-menu .underline-green {
+  z-index: 10;
+}
+#primary-menu .underline-green::before {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+  transform-origin: left;
+  transition-delay: 0s;
+  z-index: -1;
+}
+#primary-menu li:hover .underline-green::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.animate-complete .contact-inner {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.animate-complete .menu-top,
+.animate-complete .product-card,
+.animate-complete .f3-title,
+.animate-complete .f3-para {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.animate-complete #primary-menu li {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.animate-complete.nav-menu .social-links {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+.animate-complete .fold2-left-card,
+.animate-complete .fold2-right-card,
+.animate-complete .testimonials,
+.animate-complete .jigsaw-rel,
+.animate-complete .jigsaw-abs,
+.animate-complete .team-karen,
+.animate-complete .latest-title,
+.animate-complete .learn-more {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.animate-complete .jigsaw-abs.jigsaw-bottom {
+  transform: translate(0px, 0px);
+}
+.animate-complete .team-content {
+  transform: translate(0px, 0px);
+}
+.animate-complete .product-slider .blog-card, .animate-complete .product-slider .product-card {
+  transform: translateY(0px);
+}
+.animate-complete .clients-wrapper {
+  transform: translateY(0) scale(1);
+}
+.animate-complete .fold1-image {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.animate-complete .hero-content {
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+}
